@@ -2,8 +2,8 @@
 ## Install Symfony version 4.x.x
 __Terminal__: ```composer create-project symfony/website-skeleton my_project_name "4.4.*"```
 ## Procédure d'installation
-### Clone github procédure
-A faire
+## Etapes de développement
+
 ### Database
 __Config database dans .env__:  
 ```DATABASE_URL=mysql://root:@127.0.0.1:3306/db_todolist```  
@@ -23,3 +23,9 @@ La relation se fera à partir de l'entité Todo, avec une propriété _category_
 ### Migration
 1. Création du fichier de migration ```php bin/console make:migration```
 2. Exécuter la migration ```php bin/console doctrine:migrations:migrate```-> créé les tables Todo et Category dans MySql
+## Git commit
+1. git add .
+2. git commit -m "description_of_commit"
+
+# Fixtures
+Installer d'abord: ```composer require orm-fixtures --dev```
